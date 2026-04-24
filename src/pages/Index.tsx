@@ -8,36 +8,44 @@ const GALLERY_IMG_2 = "https://cdn.poehali.dev/projects/201ff8fc-b8ce-4ecd-9505-
 
 const plans = [
   {
-    name: "СТАРТ",
+    name: "3,5 – 6 ЛЕТ",
     price: "2 500",
     period: "/ месяц",
-    visits: "8 занятий",
-    features: ["Групповые тренировки", "Раздевалка", "Консультация тренера"],
+    visits: "Полный месяц",
+    features: ["Групповые тренировки", "Развитие координации", "Игровая форма обучения", "Тренер Шинкаренко Д.В."],
     highlight: false,
   },
   {
-    name: "ПРОГРЕСС",
-    price: "4 500",
+    name: "7 – 10 ЛЕТ",
+    price: "2 500",
     period: "/ месяц",
-    visits: "Безлимит",
-    features: ["Все групповые программы", "2 персональных занятия", "Анализ питания", "Раздевалка + полотенце"],
+    visits: "Полный месяц",
+    features: ["Групповые тренировки", "Техника и тактика игры", "Участие в соревнованиях", "Тренер Шинкаренко Д.В."],
     highlight: true,
   },
   {
-    name: "ЭЛИТА",
-    price: "8 000",
+    name: "СЕМЕЙНЫЙ",
+    price: "3 500",
     period: "/ месяц",
-    visits: "Безлимит VIP",
-    features: ["Приоритетная запись", "4 персональных занятия", "Программа питания", "Спортивное питание", "Персональный тренер"],
+    visits: "2 и более детей",
+    features: ["Для братьев и сестёр", "Все возрастные группы", "Выгода для семьи", "Тренер Шинкаренко Д.В."],
+    highlight: false,
+  },
+  {
+    name: "ИНДИВИДУАЛЬНО",
+    price: "500",
+    period: "/ тренировка",
+    visits: "1 ребёнок",
+    features: ["Персональный подход", "Отработка навыков", "Удобное время", "Тренер Шинкаренко Д.В."],
     highlight: false,
   },
 ];
 
 const features = [
-  { icon: "Dumbbell", title: "Профессиональный зал", desc: "Современное оборудование мирового класса" },
-  { icon: "Users", title: "Опытные тренеры", desc: "Команда сертифицированных специалистов" },
-  { icon: "Trophy", title: "Результаты", desc: "Сотни спортсменов достигли своих целей" },
-  { icon: "Flame", title: "Энергия каждый день", desc: "Заряжаем на победы 7 дней в неделю" },
+  { icon: "MapPin", title: "Стадион завода", desc: "Тренируемся на поле стадиона сахарного завода, ул. Набережная, 8" },
+  { icon: "Users", title: "Тренер-профессионал", desc: "Шинкаренко Дмитрий Викторович — опытный детский тренер по футболу" },
+  { icon: "Trophy", title: "Все возрасты", desc: "Группы для детей от 3,5 до 10 лет, подбираем под каждого" },
+  { icon: "Flame", title: "Основан в 2026", desc: "Молодой клуб с большими амбициями — растём вместе с детьми" },
 ];
 
 function useInView(threshold = 0.15) {
@@ -152,7 +160,7 @@ export default function Index() {
             </p>
 
             <p className="text-white/70 text-lg leading-relaxed mb-10 max-w-lg animate-fade-up delay-300">
-              Присоединяйся к клубу, где рождаются победители. Профессиональные тренеры, современное оборудование и атмосфера, которая заряжает.
+              Детский футбольный клуб в Кореновске. Тренируем детей от 3,5 лет — развиваем характер, командный дух и любовь к игре.
             </p>
 
             <div className="flex flex-wrap gap-4 animate-fade-up delay-400">
@@ -172,9 +180,9 @@ export default function Index() {
 
             <div className="flex gap-10 mt-14 animate-fade-up delay-500">
               {[
-                { num: "500+", label: "Спортсменов" },
-                { num: "15+", label: "Тренеров" },
-                { num: "8", label: "Лет опыта" },
+                { num: "4", label: "Группы" },
+                { num: "3,5+", label: "Лет с нами" },
+                { num: "2026", label: "Год основания" },
               ].map((stat) => (
                 <div key={stat.label}>
                   <div className="font-oswald text-3xl font-bold text-gradient">{stat.num}</div>
@@ -210,14 +218,14 @@ export default function Index() {
                   СПОРТЗАЛ
                 </h2>
                 <p className="text-white/60 text-lg leading-relaxed mb-6">
-                  Клуб Вамос — это место, где спорт становится стилем жизни. Мы создали пространство, где каждый найдёт свой путь к победе: от новичков до профессиональных атлетов.
+                  ФК Вамос — детский футбольный клуб в Кореновске. Мы создали место, где дети учатся не только играть в футбол, но и работать в команде, преодолевать себя и добиваться результата.
                 </p>
                 <p className="text-white/60 text-lg leading-relaxed mb-8">
-                  Наши программы разработаны так, чтобы давать максимальный результат при минимальном риске травм. Индивидуальный подход — наш главный принцип.
+                  Тренировки ведёт Шинкаренко Дмитрий Викторович. Занимаемся на поле стадиона сахарного завода. Принимаем детей от 3,5 лет — первая тренировка бесплатно!
                 </p>
                 <div className="flex items-center gap-3 text-[#b48fde]">
                   <Icon name="MapPin" size={16} />
-                  <span className="text-sm">г. Москва, ул. Спортивная, 42</span>
+                  <span className="text-sm">г. Кореновск, ул. Набережная, 8 — стадион сахарного завода</span>
                 </div>
               </div>
 
@@ -254,7 +262,7 @@ export default function Index() {
               <h2 className="font-oswald text-5xl md:text-6xl font-bold">ВЫБЕРИ СВОЙ ПУТЬ</h2>
             </div>
 
-            <div className="grid md:grid-cols-3 gap-6">
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
               {plans.map((plan, i) => (
                 <div
                   key={plan.name}
@@ -386,9 +394,9 @@ export default function Index() {
 
               <div className="space-y-4">
                 {[
-                  { icon: "Phone", text: "+7 (999) 123-45-67" },
-                  { icon: "Mail", text: "hello@vamos-club.ru" },
-                  { icon: "Clock", text: "Пн–Вс: 07:00 – 23:00" },
+                  { icon: "Phone", text: "+7 (960) 493-99-09" },
+                  { icon: "MapPin", text: "г. Кореновск, ул. Набережная, 8" },
+                  { icon: "User", text: "Тренер: Шинкаренко Дмитрий Викторович" },
                 ].map((item) => (
                   <div key={item.text} className="flex items-center gap-3 text-white/70">
                     <div className="w-8 h-8 bg-[#1A1A1A] flex items-center justify-center">
@@ -430,10 +438,11 @@ export default function Index() {
                     onChange={(e) => setFormData(prev => ({ ...prev, plan: e.target.value }))}
                     className="w-full bg-[#1A1A1A] border border-white/10 px-4 py-3 text-white text-sm focus:border-[#b48fde] focus:outline-none transition-colors appearance-none"
                   >
-                    <option value="">Выбери план (необязательно)</option>
-                    <option value="СТАРТ">Старт — 2 500 ₽/мес</option>
-                    <option value="ПРОГРЕСС">Прогресс — 4 500 ₽/мес</option>
-                    <option value="ЭЛИТА">Элита — 8 000 ₽/мес</option>
+                    <option value="">Выбери группу (необязательно)</option>
+                    <option value="3.5-6">Группа 3,5–6 лет — 2 500 ₽/мес</option>
+                    <option value="7-10">Группа 7–10 лет — 2 500 ₽/мес</option>
+                    <option value="family">Семейный тариф — 3 500 ₽/мес</option>
+                    <option value="individual">Индивидуальная — 500 ₽/тренировка</option>
                   </select>
                 </div>
                 <button className="w-full bg-fire font-oswald text-sm tracking-widest py-4 uppercase font-semibold hover:opacity-90 transition-all hover:scale-[1.02] active:scale-95 mt-2 text-white">
@@ -463,17 +472,17 @@ export default function Index() {
                 {
                   icon: "MapPin",
                   title: "Адрес",
-                  lines: ["г. Москва", "ул. Спортивная, д. 42", "м. Спортивная, 5 мин пешком"],
+                  lines: ["г. Кореновск", "ул. Набережная, 8", "Стадион сахарного завода"],
                 },
                 {
                   icon: "Phone",
                   title: "Телефон",
-                  lines: ["+7 (999) 123-45-67", "+7 (999) 765-43-21", "Звоним с 8:00 до 22:00"],
+                  lines: ["+7 (960) 493-99-09", "Шинкаренко Дмитрий Викторович", "Звоните в любое время"],
                 },
                 {
-                  icon: "Clock",
-                  title: "Режим работы",
-                  lines: ["Понедельник – Пятница", "07:00 – 23:00", "Суббота – Воскресенье 09:00 – 21:00"],
+                  icon: "Users",
+                  title: "Группы",
+                  lines: ["3,5–6 лет и 7–10 лет", "Семейный и индивидуальный", "Первая тренировка — бесплатно"],
                 },
               ].map((item) => (
                 <div key={item.title} className="card-hover bg-[#111] border border-white/5 p-8">
@@ -507,7 +516,7 @@ export default function Index() {
             ))}
           </div>
           <p className="text-xs text-white/20">
-            © 2024 Вамос. Все права защищены.
+            © 2026 ФК Вамос, г. Кореновск. Все права защищены.
           </p>
         </div>
       </footer>
