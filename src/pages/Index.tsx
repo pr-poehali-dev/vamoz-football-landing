@@ -1,9 +1,10 @@
 import { useState, useEffect, useRef } from "react";
 import Icon from "@/components/ui/icon";
 
-const HERO_IMAGE = "https://cdn.poehali.dev/projects/201ff8fc-b8ce-4ecd-9505-d7873a4cf9a8/files/d7cd338f-5c42-4353-979f-b70c7dd6e79b.jpg";
-const GALLERY_IMG_1 = "https://cdn.poehali.dev/projects/201ff8fc-b8ce-4ecd-9505-d7873a4cf9a8/files/29250919-7f8d-4792-88e1-ee756e4c9ea9.jpg";
-const GALLERY_IMG_2 = "https://cdn.poehali.dev/projects/201ff8fc-b8ce-4ecd-9505-d7873a4cf9a8/files/d7cd338f-5c42-4353-979f-b70c7dd6e79b.jpg";
+const HERO_IMAGE = "https://cdn.poehali.dev/projects/201ff8fc-b8ce-4ecd-9505-d7873a4cf9a8/bucket/5b8efaea-94f5-4f9f-940e-734938ad5477.jpeg";
+const LOGO_IMAGE = "https://cdn.poehali.dev/projects/201ff8fc-b8ce-4ecd-9505-d7873a4cf9a8/bucket/7a5b001f-5037-442f-a770-747f82adbe63.jpeg";
+const GALLERY_IMG_1 = "https://cdn.poehali.dev/projects/201ff8fc-b8ce-4ecd-9505-d7873a4cf9a8/bucket/a1b58b3d-5f01-412c-affe-8cb06fad4153.jpeg";
+const GALLERY_IMG_2 = "https://cdn.poehali.dev/projects/201ff8fc-b8ce-4ecd-9505-d7873a4cf9a8/bucket/bd7feba5-20cd-4bd0-b053-b685a446f6b6.jpeg";
 
 const plans = [
   {
@@ -136,12 +137,15 @@ export default function Index() {
           <div className="max-w-2xl">
             <div className="flex items-center gap-3 mb-6 animate-fade-up">
               <div className="w-10 h-0.5 bg-fire" />
-              <span className="font-oswald text-sm tracking-[0.3em] text-[#b48fde] uppercase">Спортивный клуб</span>
+              <span className="font-oswald text-sm tracking-[0.3em] text-[#b48fde] uppercase">Детский футбольный клуб</span>
             </div>
 
-            <h1 className="font-oswald text-7xl md:text-9xl font-bold leading-none mb-4 animate-fade-up delay-100">
-              ВАМОС
-            </h1>
+            <div className="flex items-center gap-6 animate-fade-up delay-100">
+              <img src={LOGO_IMAGE} alt="Вамос логотип" className="w-24 h-24 md:w-32 md:h-32 object-contain drop-shadow-2xl" />
+              <h1 className="font-oswald text-7xl md:text-9xl font-bold leading-none">
+                ВАМОС
+              </h1>
+            </div>
 
             <p className="font-oswald text-2xl md:text-3xl font-light tracking-widest text-white/60 mb-8 animate-fade-up delay-200">
               ДВИЖЕНИЕ — ЭТО ЖИЗНЬ
@@ -322,35 +326,35 @@ export default function Index() {
             <div className="grid grid-cols-1 md:grid-cols-12 gap-4">
               <div className="md:col-span-7 relative group overflow-hidden">
                 <img
-                  src={HERO_IMAGE}
-                  alt="Зал"
+                  src={GALLERY_IMG_1}
+                  alt="Тренировка"
                   className="w-full h-80 md:h-96 object-cover transition-transform duration-700 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#0D0D0D]/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
-                  <span className="font-oswald text-xl tracking-widest">ТРЕНАЖЁРНЫЙ ЗАЛ</span>
+                  <span className="font-oswald text-xl tracking-widest">ТРЕНИРОВКИ</span>
                 </div>
               </div>
 
               <div className="md:col-span-5 flex flex-col gap-4">
                 <div className="relative group overflow-hidden flex-1">
                   <img
-                    src={GALLERY_IMG_1}
-                    alt="Тренировка"
+                    src={GALLERY_IMG_2}
+                    alt="Тренировка 2"
                     className="w-full h-full min-h-44 object-cover transition-transform duration-700 group-hover:scale-105"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#0D0D0D]/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
-                    <span className="font-oswald text-lg tracking-widest">ТРЕНИРОВКИ</span>
+                    <span className="font-oswald text-lg tracking-widest">НА ПОЛЕ</span>
                   </div>
                 </div>
 
-                <div className="relative group overflow-hidden flex-1">
+                <div className="relative group overflow-hidden flex-1 bg-[#111] flex items-center justify-center">
                   <img
-                    src={GALLERY_IMG_2}
-                    alt="Команда"
+                    src={HERO_IMAGE}
+                    alt="Флаг клуба"
                     className="w-full h-full min-h-44 object-cover transition-transform duration-700 group-hover:scale-105"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#0D0D0D]/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
-                    <span className="font-oswald text-lg tracking-widest">НАША КОМАНДА</span>
+                    <span className="font-oswald text-lg tracking-widest">СИМВОЛИКА КЛУБА</span>
                   </div>
                 </div>
               </div>
