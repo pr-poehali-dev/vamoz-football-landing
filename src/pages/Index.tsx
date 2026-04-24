@@ -215,7 +215,7 @@ export default function Index() {
                 <h2 className="font-oswald text-5xl md:text-6xl font-bold leading-tight mb-6">
                   МЫ — ЭТО<br />
                   <span className="text-gradient">БОЛЬШЕ ЧЕМ</span><br />
-                  СПОРТЗАЛ
+                  КОМАНДА!
                 </h2>
                 <p className="text-white/60 text-lg leading-relaxed mb-6">
                   ФК Вамос — детский футбольный клуб в Кореновске. Мы создали место, где дети учатся не только играть в футбол, но и работать в команде, преодолевать себя и добиваться результата.
