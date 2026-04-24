@@ -207,7 +207,7 @@ export default function Index() {
           <div className={`transition-all duration-700 ${aboutSection.inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}>
             <div className="flex items-center gap-4 mb-4">
               <div className="w-12 h-0.5 bg-fire" />
-              <span className="font-oswald text-sm tracking-[0.3em] text-[#FF6B1A] uppercase">О клубе</span>
+              <span className="font-oswald text-sm tracking-[0.3em] text-white uppercase">О клубе</span>
             </div>
 
             <div className="grid md:grid-cols-2 gap-16 items-center">
