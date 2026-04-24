@@ -13,7 +13,7 @@
     --popover: 0 0% 8%;
     --popover-foreground: 0 0% 98%;
 
-    --primary: 20 100% 55%;
+    --primary: 270 60% 75%;
     --primary-foreground: 0 0% 5%;
 
     --secondary: 0 0% 12%;
@@ -22,7 +22,7 @@
     --muted: 0 0% 12%;
     --muted-foreground: 0 0% 60%;
 
-    --accent: 20 100% 55%;
+    --accent: 270 60% 75%;
     --accent-foreground: 0 0% 5%;
 
     --destructive: 0 84.2% 60.2%;
@@ -30,12 +30,12 @@
 
     --border: 0 0% 15%;
     --input: 0 0% 15%;
-    --ring: 20 100% 55%;
+    --ring: 270 60% 75%;
 
     --radius: 0.25rem;
 
-    --vamos-orange: #ff6b1a;
-    --vamos-red: #e02020;
+    --vamos-orange: #b48fde;
+    --vamos-red: #9b6fcf;
     --vamos-dark: #0d0d0d;
     --vamos-gray: #1a1a1a;
     --vamos-light: #f5f5f5;
@@ -65,22 +65,22 @@
   }
 
   .text-gradient {
-    background: linear-gradient(135deg, #ff6b1a 0%, #e02020 100%);
+    background: linear-gradient(135deg, #b48fde 0%, #9b6fcf 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
   }
 
   .bg-fire {
-    background: linear-gradient(135deg, #ff6b1a 0%, #e02020 100%);
+    background: linear-gradient(135deg, #b48fde 0%, #9b6fcf 100%);
   }
 
   .border-fire {
-    border-color: #ff6b1a;
+    border-color: #b48fde;
   }
 
   .hover-fire:hover {
-    background: linear-gradient(135deg, #ff6b1a 0%, #e02020 100%);
+    background: linear-gradient(135deg, #b48fde 0%, #9b6fcf 100%);
     color: white;
   }
 }

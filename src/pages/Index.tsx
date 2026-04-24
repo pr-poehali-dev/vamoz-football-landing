@@ -136,7 +136,7 @@ export default function Index() {
           <div className="max-w-2xl">
             <div className="flex items-center gap-3 mb-6 animate-fade-up">
               <div className="w-10 h-0.5 bg-fire" />
-              <span className="font-oswald text-sm tracking-[0.3em] text-[#FF6B1A] uppercase">Спортивный клуб</span>
+              <span className="font-oswald text-sm tracking-[0.3em] text-[#b48fde] uppercase">Спортивный клуб</span>
             </div>
 
             <h1 className="font-oswald text-7xl md:text-9xl font-bold leading-none mb-4 animate-fade-up delay-100">
@@ -160,7 +160,7 @@ export default function Index() {
               </button>
               <button
                 onClick={() => scrollTo("plans")}
-                className="border border-white/30 font-oswald text-base tracking-widest px-8 py-4 uppercase font-semibold hover:border-[#FF6B1A] hover:text-[#FF6B1A] transition-all"
+                className="border border-white/30 font-oswald text-base tracking-widest px-8 py-4 uppercase font-semibold hover:border-[#b48fde] hover:text-[#b48fde] transition-all"
               >
                 Абонементы
               </button>
@@ -189,7 +189,7 @@ export default function Index() {
 
       {/* ABOUT */}
       <section id="about" className="py-28 relative" ref={aboutSection.ref}>
-        <div className="absolute top-0 left-0 w-px h-full bg-gradient-to-b from-transparent via-[#FF6B1A]/30 to-transparent" />
+        <div className="absolute top-0 left-0 w-px h-full bg-gradient-to-b from-transparent via-[#b48fde]/30 to-transparent" />
 
         <div className="max-w-7xl mx-auto px-6">
           <div className={`transition-all duration-700 ${aboutSection.inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}>
@@ -211,7 +211,7 @@ export default function Index() {
                 <p className="text-white/60 text-lg leading-relaxed mb-8">
                   Наши программы разработаны так, чтобы давать максимальный результат при минимальном риске травм. Индивидуальный подход — наш главный принцип.
                 </p>
-                <div className="flex items-center gap-3 text-[#FF6B1A]">
+                <div className="flex items-center gap-3 text-[#b48fde]">
                   <Icon name="MapPin" size={16} />
                   <span className="text-sm">г. Москва, ул. Спортивная, 42</span>
                 </div>
@@ -244,7 +244,7 @@ export default function Index() {
             <div className="text-center mb-16">
               <div className="flex items-center justify-center gap-4 mb-4">
                 <div className="w-12 h-0.5 bg-fire" />
-                <span className="font-oswald text-sm tracking-[0.3em] text-[#FF6B1A] uppercase">Абонементы</span>
+                <span className="font-oswald text-sm tracking-[0.3em] text-[#b48fde] uppercase">Абонементы</span>
                 <div className="w-12 h-0.5 bg-fire" />
               </div>
               <h2 className="font-oswald text-5xl md:text-6xl font-bold">ВЫБЕРИ СВОЙ ПУТЬ</h2>
@@ -256,7 +256,7 @@ export default function Index() {
                   key={plan.name}
                   className={`relative card-hover p-8 border transition-all duration-300 ${
                     plan.highlight
-                      ? "border-[#FF6B1A] bg-[#111]"
+                      ? "border-[#b48fde] bg-[#111]"
                       : "border-white/5 bg-[#0F0F0F]"
                   }`}
                   style={{ transitionDelay: `${i * 100}ms` }}
@@ -275,7 +275,7 @@ export default function Index() {
                       </span>
                       <span className="text-white/40 text-sm">{plan.period}</span>
                     </div>
-                    <div className="mt-2 text-[#FF6B1A] font-oswald text-sm tracking-wider">{plan.visits}</div>
+                    <div className="mt-2 text-[#b48fde] font-oswald text-sm tracking-wider">{plan.visits}</div>
                   </div>
 
                   <div className="w-full h-px bg-white/5 mb-6" />
@@ -283,7 +283,7 @@ export default function Index() {
                   <ul className="space-y-3 mb-8">
                     {plan.features.map((feat) => (
                       <li key={feat} className="flex items-center gap-3 text-white/70 text-sm">
-                        <Icon name="Check" size={14} className="text-[#FF6B1A] flex-shrink-0" />
+                        <Icon name="Check" size={14} className="text-[#b48fde] flex-shrink-0" />
                         {feat}
                       </li>
                     ))}
@@ -297,7 +297,7 @@ export default function Index() {
                     className={`w-full font-oswald text-sm tracking-widest py-3 uppercase font-semibold transition-all hover:opacity-90 active:scale-95 ${
                       plan.highlight
                         ? "bg-fire text-white"
-                        : "border border-white/20 text-white hover:border-[#FF6B1A] hover:text-[#FF6B1A]"
+                        : "border border-white/20 text-white hover:border-[#b48fde] hover:text-[#b48fde]"
                     }`}
                   >
                     Выбрать
@@ -315,7 +315,7 @@ export default function Index() {
           <div className={`transition-all duration-700 ${gallerySection.inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}>
             <div className="flex items-center gap-4 mb-4">
               <div className="w-12 h-0.5 bg-fire" />
-              <span className="font-oswald text-sm tracking-[0.3em] text-[#FF6B1A] uppercase">Фотогалерея</span>
+              <span className="font-oswald text-sm tracking-[0.3em] text-[#b48fde] uppercase">Фотогалерея</span>
             </div>
             <h2 className="font-oswald text-5xl md:text-6xl font-bold mb-12">НАША АТМОСФЕРА</h2>
 
@@ -361,15 +361,15 @@ export default function Index() {
 
       {/* BOOKING */}
       <section id="booking" className="py-28 bg-[#0A0A0A] relative overflow-hidden">
-        <div className="absolute top-0 right-0 w-96 h-96 bg-[#FF6B1A]/5 rounded-full blur-3xl" />
-        <div className="absolute bottom-0 left-0 w-64 h-64 bg-[#E02020]/5 rounded-full blur-3xl" />
+        <div className="absolute top-0 right-0 w-96 h-96 bg-[#b48fde]/5 rounded-full blur-3xl" />
+        <div className="absolute bottom-0 left-0 w-64 h-64 bg-[#9b6fcf]/5 rounded-full blur-3xl" />
 
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid md:grid-cols-2 gap-16 items-center">
             <div>
               <div className="flex items-center gap-4 mb-4">
                 <div className="w-12 h-0.5 bg-fire" />
-                <span className="font-oswald text-sm tracking-[0.3em] text-[#FF6B1A] uppercase">Запись</span>
+                <span className="font-oswald text-sm tracking-[0.3em] text-[#b48fde] uppercase">Запись</span>
               </div>
               <h2 className="font-oswald text-5xl md:text-6xl font-bold leading-tight mb-6">
                 ПЕРВАЯ<br />
@@ -388,7 +388,7 @@ export default function Index() {
                 ].map((item) => (
                   <div key={item.text} className="flex items-center gap-3 text-white/70">
                     <div className="w-8 h-8 bg-[#1A1A1A] flex items-center justify-center">
-                      <Icon name={item.icon} size={14} className="text-[#FF6B1A]" />
+                      <Icon name={item.icon} size={14} className="text-[#b48fde]" />
                     </div>
                     <span className="text-sm">{item.text}</span>
                   </div>
@@ -406,7 +406,7 @@ export default function Index() {
                     placeholder="Как тебя зовут?"
                     value={formData.name}
                     onChange={(e) => setFormData(prev => ({ ...prev, name: e.target.value }))}
-                    className="w-full bg-[#1A1A1A] border border-white/10 px-4 py-3 text-white placeholder:text-white/30 text-sm focus:border-[#FF6B1A] focus:outline-none transition-colors"
+                    className="w-full bg-[#1A1A1A] border border-white/10 px-4 py-3 text-white placeholder:text-white/30 text-sm focus:border-[#b48fde] focus:outline-none transition-colors"
                   />
                 </div>
                 <div>
@@ -416,7 +416,7 @@ export default function Index() {
                     placeholder="+7 (___) ___-__-__"
                     value={formData.phone}
                     onChange={(e) => setFormData(prev => ({ ...prev, phone: e.target.value }))}
-                    className="w-full bg-[#1A1A1A] border border-white/10 px-4 py-3 text-white placeholder:text-white/30 text-sm focus:border-[#FF6B1A] focus:outline-none transition-colors"
+                    className="w-full bg-[#1A1A1A] border border-white/10 px-4 py-3 text-white placeholder:text-white/30 text-sm focus:border-[#b48fde] focus:outline-none transition-colors"
                   />
                 </div>
                 <div>
@@ -424,7 +424,7 @@ export default function Index() {
                   <select
                     value={formData.plan}
                     onChange={(e) => setFormData(prev => ({ ...prev, plan: e.target.value }))}
-                    className="w-full bg-[#1A1A1A] border border-white/10 px-4 py-3 text-white text-sm focus:border-[#FF6B1A] focus:outline-none transition-colors appearance-none"
+                    className="w-full bg-[#1A1A1A] border border-white/10 px-4 py-3 text-white text-sm focus:border-[#b48fde] focus:outline-none transition-colors appearance-none"
                   >
                     <option value="">Выбери план (необязательно)</option>
                     <option value="СТАРТ">Старт — 2 500 ₽/мес</option>
@@ -450,7 +450,7 @@ export default function Index() {
           <div className={`transition-all duration-700 ${contactSection.inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}>
             <div className="flex items-center gap-4 mb-4">
               <div className="w-12 h-0.5 bg-fire" />
-              <span className="font-oswald text-sm tracking-[0.3em] text-[#FF6B1A] uppercase">Контакты</span>
+              <span className="font-oswald text-sm tracking-[0.3em] text-[#b48fde] uppercase">Контакты</span>
             </div>
             <h2 className="font-oswald text-5xl md:text-6xl font-bold mb-12">КАК НАС НАЙТИ</h2>
 
@@ -497,7 +497,7 @@ export default function Index() {
           </div>
           <div className="flex gap-6">
             {["ВКонтакте", "Telegram", "Instagram"].map((social) => (
-              <a key={social} href="#" className="font-oswald text-xs tracking-widest text-white/30 hover:text-[#FF6B1A] transition-colors uppercase">
+              <a key={social} href="#" className="font-oswald text-xs tracking-widest text-white/30 hover:text-[#b48fde] transition-colors uppercase">
                 {social}
               </a>
             ))}
